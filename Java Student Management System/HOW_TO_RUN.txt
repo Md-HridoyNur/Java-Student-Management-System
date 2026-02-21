@@ -1,0 +1,64 @@
+=====================================
+ Student Management System — Java
+=====================================
+
+REQUIREMENTS
+------------
+  Java JDK 8 or newer (NOT just JRE)
+  No other libraries needed — pure Java Swing
+
+INSTALL JAVA JDK (if not already installed)
+-------------------------------------------
+  Windows:  https://adoptium.net   (download .msi installer)
+  macOS:    brew install --cask temurin    OR  https://adoptium.net
+  Linux:    sudo apt install default-jdk   (Ubuntu/Debian)
+            sudo dnf install java-21-openjdk-devel  (Fedora)
+
+CHECK YOUR JAVA VERSION
+-----------------------
+  Open a terminal/command prompt and run:
+    java -version
+    javac -version
+
+  Both commands should print a version number (8, 11, 17, or 21).
+  If "javac" is not found, you only have the JRE — install the JDK.
+
+HOW TO RUN
+----------
+  1. Open a terminal in the folder containing StudentManagementSystem.java
+
+  2. Compile:
+       javac StudentManagementSystem.java
+
+     This creates StudentManagementSystem.class (and some inner class files)
+
+  3. Run:
+       java StudentManagementSystem
+
+  The app window will open immediately.
+
+FEATURES
+--------
+  Dashboard   — Live stats (total students, avg GPA, attendance, passing rate)
+                Pie chart showing students by course
+                Top students leaderboard
+
+  Students    — Add, Edit, Delete student records
+                Live search by name / email / course
+                Color-coded GPA and attendance columns
+                Export all students to CSV
+
+  Grades      — Add/delete grades per student (subject + score 0-100)
+                Auto letter grade (A/B/C/D/F) with color coding
+                Export grades to CSV
+
+  Attendance  — Mark Present/Absent with date picker
+                Per-student attendance history
+                Export attendance to CSV
+
+TROUBLESHOOTING
+---------------
+  "javac not found"   → Install the JDK (not just JRE)
+  "cannot find symbol" → Make sure you're running javac, not java
+  Window looks plain  → Normal on some Linux systems (GTK L&F differences)
+  Dark theme missing  → The app sets its own colors — works on all platforms
